@@ -1,0 +1,20 @@
+{
+  "name": "vite-vue-typescript-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@xania/state": "^0.1.5",
+    "@xania/view": "0.4.10"
+  },
+  "devDependencies": {
+    "sass": "^1.56.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0"
+  }
+}
