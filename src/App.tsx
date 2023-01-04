@@ -26,7 +26,7 @@ export function App() {
           </div>
         </div>
 
-        <button click={(_) => count.set((x) => (x! | 0) + 1)}>increment</button>
+        <button click={(_) => count.set((x) => (x || 0) + 1)}>increment</button>
       </header>
     </div>
   );
