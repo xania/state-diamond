@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@xania/state": "^0.1.6",
+    "@xania/state": "0.1.12",
     "@xania/view": "0.4.11"
   },
   "devDependencies": {
