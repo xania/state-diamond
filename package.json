@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@xania/state": "0.1.12",
-    "@xania/view": "0.4.11"
+    "@xania/state": "0.1.51",
+    "@xania/view": "0.4.28"
   },
   "devDependencies": {
     "sass": "^1.56.1",
