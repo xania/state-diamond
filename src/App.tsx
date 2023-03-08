@@ -31,3 +31,35 @@ export function App() {
     </div>
   );
 }
+
+function someOtherStuff() {
+  return 420;
+}
+
+interface ViewListProps {
+  videos: State<any[]>,
+  emptyHeading: State<string>;
+}
+
+// Working version in Xania
+function VideoList({ videos, emptyHeading }: ViewListProps) {
+  const vm$ = videos.join(emptyHeading).map(([videos, emptyHeading]) => {
+    const count = videos.length;
+
+    let heading = emptyHeading;
+    let somethingElse = 42;
+    
+    if (count > 0) {
+      const noun = count > 1 ? 'Videos' : 'Video';
+      heading = count + ' ' + noun;
+      somethingElse = someOtherStuff();
+    }
+    return { heading, somethingElse }
+  });
+  return (
+    <>
+      <h1>{vm$.prop("heading")}</h1>
+      <h2>{vm$.prop("somethingElse")}</h2>
+    </>
+  );
+}
